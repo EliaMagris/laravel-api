@@ -36,7 +36,7 @@
 
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a href="{{ route('admin.posts.index') }}">Lista Post</a>
+                                <a href="{{ route('admin.posts.index') }}">Lista Post!!!</a>
                             </li>
                         </ul>
 

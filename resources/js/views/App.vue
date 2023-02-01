@@ -1,11 +1,12 @@
 <template>
-    <div>
-        <PostList/>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <router-link :to="{ name: 'admin.posts.index' }"
-                    >Lista Post</router-link
-                >
+    <div id="root">
+        
+        <ul v-if="posts.length">
+            <li v-for="elem in posts" :key="elem.id">
+                {{ elem.name }}
+                <span v-if="elem.category">
+                    {{ elem.category.name }}
+                </span>
             </li>
         </ul>
     </div>
@@ -13,13 +14,13 @@
 
 <script>
 
-import PostList from "../components/posts/PostList.vue"
+
 
 export default {
     name: "App",
 
     components: {
-        PostList,
+        
     },
     data() {
         return {
