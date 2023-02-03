@@ -19,6 +19,9 @@
                         <li class="nav-item">
                             <router-link class="nav-link" :to="{ name: 'about-us' }">About us</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to="{ name: 'tags' }">Tags</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -30,4 +33,5 @@
 export default {
     name: 'Header'
 }
+
 </script>
